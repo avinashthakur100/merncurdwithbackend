@@ -1,37 +1,14 @@
 {
-  "name": "react-crud",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.0.1",
-    "@testing-library/user-event": "^14.1.1",
-    "axios": "^0.27.2",
-    "bootstrap": "^4.6.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.0",
-    "react-scripts": "5.0.1"
-  },
+  "name": "react-crud-fullstack",
+  "version": "1.0.0",
+  "description": "Fullstack React CRUD with Node.js SQLite",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "install-all": "npm install --prefix backend && npm install --prefix frontend",
+    "start-backend": "npm start --prefix backend",
+    "start-frontend": "npm start --prefix frontend",
+    "dev": "npx concurrently \"npm run start-backend\" \"npm run start-frontend\""
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "concurrently": "^8.2.0"
   }
 }
